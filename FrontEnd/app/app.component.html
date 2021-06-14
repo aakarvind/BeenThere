@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+
+<div id="afterNavbar">
+  <app-home *ngIf="this.router.url=='/'"></app-home>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
+
+<app-scroll-to-top> </app-scroll-to-top>
+
+<!-- background: -webkit-linear-gradient(0deg,  #2dfbff 0%, #3c96ff 100%); -->
+
+
+
+

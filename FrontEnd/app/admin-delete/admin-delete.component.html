@@ -1,0 +1,81 @@
+<div class="main-w3layouts wrapper" >
+    <h1>Delete</h1>
+       <br><br>
+    <div class="space" align="center">
+      <fieldset class="switch switch-two">
+        <legend>Delete </legend>
+        <input type="radio" name="update" id="city" value="city" (change)="radioUpdate('city')"> 
+        <label class="radioLabel" for="city">City</label>
+        <input type="radio" name="update" id="place" value="place" (change)="radioUpdate('place')"> 
+        <label class="radioLabel" for="place">Place</label> 
+        <span class="switch-button"></span>
+      </fieldset>
+    </div>
+  
+    <div class="main-agileinfo" *ngIf="radioVal != null">
+      <div class="agileits-top">
+        <!-- DELETE CITY FORM -->
+        <div *ngIf="radioVal == 'city'">
+          <form [formGroup]="cityDeleteForm" (ngSubmit)="deleteCity()" class="form">
+            <div class="form-group">
+                <select class="form-control" id="se1" *ngIf="showOptions" formControlName="cityId" >
+                    <option>--Select City--</option>
+                    <option *ngFor="let cityName of cityNamesList" value="{{cityName.split(':')[1]}}">{{cityName.split(':')[2]}}</option>
+                    
+                </select>
+            </div><br>
+            
+            <div>
+              <br>
+              <button class="btn btn-success" type="submit" >Delete City</button>
+            </div>
+          </form>
+        </div>
+        <!-- Delete PLACE FORM -->
+        <div *ngIf="radioVal == 'place'">
+            <form [formGroup]="placeDeleteForm" (ngSubmit)="deletePlace()" class="form">
+              <div class="form-group">
+                  <select class="form-control" id="se1" *ngIf="showOptions" formControlName="cityId" (change)="getAllPlaceNamesInCity()">
+                      <option>--Select City--</option>
+                      <option *ngFor="let cityName of cityNamesList" value="{{cityName.split(':')[1]}}">{{cityName.split(':')[2]}}</option>
+                      
+                  </select>
+              </div><br>
+              <div class="form-group">
+                  <select class="form-control" id="sel1" *ngIf="showOptions" formControlName="placeId">
+                      <option>--Select Place--</option>
+                      <option *ngFor="let placeName of placeNamesList" value="{{placeName.split(':')[1]}}">{{placeName.split(':')[2]}}</option>   
+                    </select>
+              </div><br>
+              
+              <div>
+                <br>
+                <button class="btn btn-success" type="submit" >Delete Place</button>
+              </div>
+            </form>
+        </div>
+    
+      </div>
+    </div>
+    
+    <div *ngIf="radioVal == null">
+      <br><br><br><br><br><br>
+      <p align="center">Select an option to proceed with DELETE</p>
+      <br><br><br><br><br><br>
+    </div>
+      
+    <ul class="colorlib-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  
+  </div> 
+  <!-- end of initial div -->

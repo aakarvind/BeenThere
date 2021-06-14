@@ -1,0 +1,59 @@
+.scroll-to-top {
+
+    position: fixed;
+   
+    bottom: 30px;
+   
+    right: 30px;
+   
+    width: 50px;
+   
+    height: 50px;
+   
+    opacity: 0;
+   
+   }
+   
+   
+   
+   #upbutton {
+   
+    width: 50px;
+   
+    height: 50px;
+   
+    background-color: rgb(57, 241, 241);
+   
+    border: 2px solid #2EE59D;
+   
+    border-radius: 7px;
+   
+    transition: background-color .3s, 
+   
+    opacity .5s, visibility .5s;
+   
+    z-index: 1000;
+   
+   }
+   
+   
+   
+   .show-scrollTop {
+   
+    opacity: 1;
+   
+    transition: all .2s ease-in-out;
+   
+   }
+   
+   
+   
+   #upbutton:hover {
+   
+    background-color: #2EE59D;
+   
+    color: #fff;
+   
+    transform: translateY(-7px);
+   
+   }

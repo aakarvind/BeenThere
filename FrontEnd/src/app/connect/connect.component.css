@@ -1,0 +1,97 @@
+.container {
+    /* position: absolute; */
+ 
+  margin-bottom:50px;
+  top:60px;
+  margin-left: 200px;
+  align-content: center;
+
+    border-radius: 10px;
+  --c1: rgb(247, 223, 223);
+  --c2: rgb(125, 172, 243);
+  background: linear-gradient(138deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/200%;
+  transition: 1s;
+  padding: 10px;
+  width: 70%;
+  }
+  
+  .classStyle{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  .btn1 {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    --c1: rgb(41, 44, 41);
+    --c2: rgb(211, 211, 209);
+  background: linear-gradient(138deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/200%;
+    
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 19px;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  }
+  .btn2{
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    --c1: rgb(41, 44, 41);
+  --c2: rgb(211, 211, 209);
+  background: linear-gradient(138deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/200%;
+    float:right;
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 19px;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  }
+  
+  .un {
+    width: 76%;
+    color: rgba(0, 0, 0, 0.918);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color:  #12d8fa;
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+
+    
+    .msg1{
+      color: black;
+      font-weight: bold;
+    }
+
+    .msg2{
+      color:red;
+      font-weight: bold;
+    }
+  
+  
+
+.body{
+   margin-top:-30px;
+}

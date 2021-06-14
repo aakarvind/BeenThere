@@ -1,0 +1,83 @@
+<!-- *********************************Profile card********************* -->
+<div class="card">
+  <div class="front">
+    <div class="title">
+      <h2>CV Card</h2>
+    </div>
+    <div class="top">
+      <div class="img-container">
+        <img src="https://cloud.githubusercontent.com/assets/8037580/18605095/32900176-7cbb-11e6-81c0-65c98e45e4bd.jpg"
+          alt="image">
+      </div>
+    </div>
+    <div class="description">
+      <h1>Tom Hardy</h1>
+      <p>Actor, Writer, Producer</p>
+    </div>
+    <div class="list">
+      <ul>
+        <li><a><i class="fa fa-user"></i>&nbsp;Profile</a></li>
+        <li><a><i class="fa fa-gear"></i>&nbsp;Trivia</a></li>
+        <li><a><i class="fa fa-film"></i>&nbsp;Filmography</a></li>
+        <li><a><i class="fa fa-certificate"></i>&nbsp;Awards &amp; Nominations</a></li>
+        <li><a><i class="fa fa-users"></i>&nbsp;Characters in Movies</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="container">
+    <h2>Circles</h2>
+  
+  <div class="progress--circle progress--25">
+    <div class="progress__number">25%</div>
+  </div>
+  
+  <div class="progress--circle progress--30">
+    <div class="progress__number">30%</div>
+  </div>
+  
+  <div class="progress--circle" id="asdf" [style.background-image]="bgimg">
+    <div class="progress__number">20%</div>
+  </div>
+    
+  <div class="progress--circle progress--100">
+    <div class="progress__number">100%</div>
+  </div>
+   
+    
+  </div>  -->
+
+  <div class="radial-progress" [attr.data-progress]="rr">
+      <div class="circle">
+        <div class="mask full">
+          <div class="fill"></div>
+        </div>
+        <div class="mask half">
+          <div class="fill"></div>
+          <div class="fill fix"></div>
+        </div>
+        <div class="shadow"></div>
+      </div>
+      <div class="inset">
+        <div class="percentage"></div>
+      </div>
+    </div>
+    <div class="radial-progress" data-progress="50">
+      <div class="circle">
+        <div class="mask full">
+          <div class="fill"></div>
+        </div>
+        <div class="mask half">
+          <div class="fill"></div>
+          <div class="fill fix"></div>
+        </div>
+        <div class="shadow"></div>
+      </div>
+      <div class="inset">
+        <div class="percentage"></div>
+      </div>
+    </div>
+
+

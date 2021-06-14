@@ -1,0 +1,22 @@
+<div class="container">
+<div class="feedback-list" *ngIf="displayFeedback" style="padding: 16px;">
+    <div class="feedback" *ngFor="let currFeedback of allFeedbacks">
+      <div class="profile-pic" style="background: url('https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50')"></div>
+      <div style="float: right;">
+        <p>
+          <strong>Rating: </strong>
+          {{currFeedback.satisfactionLevel}}
+          <strong>/5</strong>
+        </p>
+      </div>
+      <blockquote>
+        {{currFeedback.feedback}}
+      </blockquote>
+      <div class="author">
+        {{currFeedback.userId}}
+      </div>
+    </div>
+  
+    
+  </div>
+</div>

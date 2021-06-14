@@ -1,0 +1,48 @@
+<section id="hero1" class="hero">
+  <div class="main-w3layouts wrapper" >
+    <h1 style="color:ghostwhite">Add City</h1>
+     
+          <div class="main-agileinfo">
+              <div class="agileits-top">
+  
+    <form [formGroup]="addCityForm" (ngSubmit)="AddCity()" class="form">
+      <div class="form-group">
+          
+        <input type="text" autocomplete="off" placeholder="Enter City" class="form-control" formControlName="name" id="ip1">
+  
+      </div>
+      <br>
+      <div class="form-group">
+          <textarea rows="4" cols="50" id="ip2" autocomplete="off" placeholder="Enter Description..."  class="form-control" formControlName="description">
+          </textarea>
+        </div>
+      <br>
+      <div class="form-group">
+       <p style="color: #000; text-align: left; font-size: 1em; letter-spacing: 0.2px; font-weight: 300;"> Add Photo</p>
+        <br>
+          <input type="file" class="text-center  file-upload" >
+      </div>
+      <div>
+        <br>
+      <button class="btn btn-success" type="submit" >Add</button>
+      <!-- <input  type="submit" value="Add"> -->
+    </div>
+  </form>
+    
+      </div></div>
+    
+    <ul class="colorlib-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+  </div>
+  
+</section>

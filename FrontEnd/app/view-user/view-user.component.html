@@ -1,0 +1,124 @@
+<div id="searchBarDiv">
+  <div>
+    <input type="text" id="searchInputField" #box (keyup)="textChanged(box.value)" autocomplete="off">
+    <button class="fa fa-search" (click)="getMatchedUsers()"></button>
+  </div>
+
+  <div *ngIf="fetchedResult" class="searchResultsBorder">
+    <div style="border: 0.7px solid rgb(219, 209, 209); border-radius: 5px;">
+      <div *ngFor="let res of listOfMatchedResults" class="searchResultDiv ">
+        <hr class="searchResultSeparator">
+        <div *ngIf="res!=noResultFound" class="searchResultOption" (click)="searchResultSelected(res)">
+          {{res}}
+        </div>
+      </div>
+      <div *ngIf="noResultFound" style="padding: 7px;">
+        No results found :(
+      </div>
+    </div>
+  </div>
+</div>
+<!--end of search bar-->
+
+
+<!-- SEARCH USER TABLE -->
+<br> <br>
+<main *ngIf="showTable">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>NUMBER OF CONNECTIONS</th>
+        <th>NUMBER OF PLACES</th>
+        <th>VIEW PROFILE</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let currUser of listOfMatchedUserStr">
+        <td data-label="Name">
+          {{currUser.split(":")[0]}}
+        </td>
+        <td data-label="Grid">
+          {{currUser.split(":")[1]}}
+        </td>
+        <td data-label="Type">
+          {{currUser.split(":")[2]}}
+        </td>
+        <td data-label="VIEW PROFILE">
+          <button class="btn btn-info" (click)="showUserDetails(currUser.split(':')[3])">VIEW PROFILE</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</main>
+<br><br>
+
+
+<section id="team" class="pb-5">
+  <div class="container">
+    <h5 class="section-title h1">Top Contacted Users</h5>
+    <div class="row">
+      <!-- Team member -->
+      <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let currUser of topContactedUsers">
+        <div>
+          <div>
+            <div class="frontside">
+              <div class="card">
+                <div class="card-body text-center">
+                  <p><img class=" img-fluid" src="{{dpic}}" alt="card image"></p>
+                  <h4 class="card-title">{{currUser.name}}</h4>
+                  <p class="btn btn-primary btn-sm">
+                    {{currUser.numberOfConnections}} &nbsp;<i class="fa fa-users"></i>
+                  </p>
+                  <br><br>
+                  <div (click)="showUserDetails(currUser.email)">
+                    <a class="btn btn-primary btn-sm"><i class="fa fa-eye"></i> View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- ./Team member -->
+    </div>
+  </div>
+</section>
+
+
+<section id="team" class="pb-5">
+  <div class="container">
+    <h5 class="section-title h1">Most Travelled Users</h5>
+    <div class="row">
+      <!-- Team member -->
+      <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let currTravelUser of MostTravellingUsers">
+        <div>
+          <div>
+            <div class="frontside">
+              <div class="card">
+                <div class="card-body text-center">
+                  <p><img class=" img-fluid" src="{{dpic}}" alt="card image"> </p>
+                  <h4 class="card-title">{{currTravelUser.name}}</h4>
+                  <a href="#" class="btn btn-primary btn-sm">
+                    <i class="fa fa-map-marker"></i> &nbsp;{{currTravelUser.numberOfPlacesVisited}}
+                  </a>
+                  <br><br>
+                  <div (click)="showUserDetails(currTravelUser.email)">
+                    <a class="btn btn-primary btn-sm"><i class="fa fa-eye"></i> View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- ./Team member -->
+    </div>
+  </div>
+</section>

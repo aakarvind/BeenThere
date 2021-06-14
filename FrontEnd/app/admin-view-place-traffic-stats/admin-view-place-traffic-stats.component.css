@@ -1,0 +1,135 @@
+.w3-third {
+    margin-bottom: 7px;
+}
+
+/* CSS for Flipping cards */
+.flip-card {
+    background-color: transparent;
+    height: 122px;
+    perspective: 1000px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    z-index: 2;
+}
+  
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.bcdcard {
+
+    box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+
+    border-width: 3px;
+
+    transition: all .2s;
+
+    background: #fff;
+
+    padding: 16px;
+    margin-bottom: 16px;
+
+}
+
+ 
+
+.reviewUserName {
+
+    width: 60%;
+
+}
+
+ 
+
+.rating {
+
+    background: #fff;
+
+    float: right;
+
+    position: absolute;
+
+    right: 10%;
+
+    top: -2px;
+
+}
+
+  
+
+input[type="radio"] {
+
+    position: fixed;
+
+    top: 0;
+
+    right: 100%;
+
+}
+
+  
+
+.rating label {
+
+    font-size: 1.5em;
+
+    /* padding: 0.5em; */
+
+    margin: 0;
+
+    float: left;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+  
+
+input[type="radio"]:checked ~ input + label {
+
+    background: none;
+
+    color: #aaa;
+
+}
+
+  
+
+input + label {
+
+    background: #fff;
+
+    color: orange;
+
+    margin: 0 0 1em 0;
+
+}

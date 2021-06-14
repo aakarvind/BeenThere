@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+p1 {
+  text-shadow: color1 x1 y1 blur1, color2 x2 y2 blur2;
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 2px;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+  
+}
+#map {
+        height: 1000px;  
+        width: 1500px;  
+       }
+.font {
+   
+   text-align: center;
+   font-family: arial;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  /* background-image: url("dd.jpg");  */
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+     /* background:linear-gradient(rgb(0, 183, 255), whitesmoke, skyblue);  */
+     
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+.page-header{
+    font-family: Indie Flower;
+    text-align: center;
+    font-size: 4em;
+    color:rgba(121, 23, 23, 0.6);
+  }
+  
+</style>
+</head>
+<body>
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="rain.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video> -->
+
+<!-- <div class="header">
+  <h1>My Website</h1>
+  <p>Resize the browser window to see the effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div> -->
+
+
+
+
+<!-- <div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Panjim (Goa)</h2>
+      <h2><img class="imgDestType" src="/assets/skyline.png" height="30">
+      <span class="destTitleType"><font size="4"> City</font></span></h2>
+
+
+
+      <div class="w3-content w3-display-container">
+            <img class="mySlides" src="../assets/panaji_main1.jpg" style="width:1200px;height:600px;">
+            <img class="mySlides" src="../assets/panaji_main2.jpg" style="width:1200px;height:600px;">
+            <img class="mySlides" src="../assets/panaji_main3.jpg" style="width:1200px;height:600px;">
+            <img class="mySlides" src="../assets/panaji_main4.jpg" style="width:1200px;height:600px;">
+            <img class="mySlides" src="../assets/panaji_main6.jpg" style="width:1200px;height:600px;">  
+          
+           
+          </div>
+          <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<br>
+<br>
+
+    
+
+
+<p1>Goa is India's smallest state by area and the fourth smallest by population. Located in West India in the region known as the Konkan, it is one of the most popular tourist destinations of India with beautiful beaches and historical sites.</p1> 
+<br>
+<br>       
+<p1>Goa is India's richest state with highest GDP per capita. The Indian epic Mahabharata refers to the Goa as Goparashtra or Govarashtra, which means ''a nation of Cowherds''.</p1>
+<br>
+<br>
+<p1>Goa is a strip of land 110 km long and 60 km wide between the Sahyadri range of the Western Ghats and the Arabian Sea on the west coast of India. Panaji is the state's capital while Vasco Da Gama is the largest city. The historic city of Margao still exhibits the cultural influence of the Portuguese. Goa has a long history of rulers dating back to the 3rd century BC. It was ruled by Emperor Ashoka followed by numerous rulers like Silharas, Kadamdas, Chalukyans, kings of Deccan, kings of Vijaynagar, Adilshah of Bijapur and finally by the Portuguese who were the most successful of them all. Goa was ruled by the Portuguese for 450 years till it was liberated from the Portuguese to form a part of India on 19th December 1961.</p1>
+<br>
+<br>
+<p1>Renowned for its beaches, places of worship and world heritage architecture, Goa is visited by large numbers of international and domestic tourists each year. It also has rich flora and fauna owing to its location on the Western Ghats range which is classified as a biodiversity hotspot. Baga, Anjuna, Calangute, Vagator and Palolem are the some popular Goa beaches. Se Cathedral, Basilica of Bom Jesus, Aguada Fort, Chapora Fort and Dudhsagar Falls are the other popular Goa tourist places.</p1>
+<br>
+<br>
+<p1>Goa being in the tropical zone and near the Arabian Sea has a hot and humid climate for most of the year. Tourism is Goa's primary industry it handles 12% of all foreign tourist arrivals in India. Goa has two main tourist seasons winter and summer. In the winter time, tourists from abroad (mainly Europe) come to Goa to enjoy the climate. In the summer time (which in Goa is the rainy season), tourists from across India come to spend the holidays.</p1>
+   
+<br>
+<br>
+<p1>The festival of Shigmo Mel or the Holi, Goa carnival and Ganesh Chaturthi are the main festivals in Goa, India.</p1>
+      
+    </div> -->
+    <div class="card">
+
+      <h2 class="page-header">where are we ?</h2>
+   
+      <div id="map"></div>
+      <script>
+  
+  function initMap() {
+  
+    var Mysore = {lat: 15.4909, lng: 73.8278};
+  
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 15, center: Mysore});
+  
+    var marker = new google.maps.Marker({position: Mysore, map: map});
+  }
+      </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTvPmlTrgYH0XjjFQks4bU6k7CpvGREFE&callback=initMap">
+      </script>
+
+    <!-- </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Goa</h2>
+      <img src="../assets/goa1.jpg" style="height:280px;">
+      <br>
+      <br>
+      <p1>Goa is one of the most popular tourist destinations of India with beautiful beaches and historical sites. Goa is India's richest state with highest GDP per capita.</p1>
+    </div>
+    <div class="card">
+      <h2>Popular Post</h2>
+      <img src="../assets/baga.jpg" style="height:250px;">
+      <img src="../assets/calungate.jpg" style="height:250px;">
+      <img src="../assets/Colva Beach.jpg" style="height:250px;">
+    </div>
+    <div class="card">
+      <h2>About Panjim</h2>
+      <p>Ideal Trip Duration: 2-3 Days</p>
+      <p>Base Station: Panjim (Goa)</p>
+      <p>Nearest City to Panjim: Panjim (Goa)</p>
+      <p>Best Time to Visit Panjim: October to February</p>
+      <p>Peak Season: December to February</p>
+      <p> State: Goa | District: North Goa</p>
+      <p>Panjim Weather: Summer: Maximum - 40°C & Minimum - 27°C 
+            Winter: Maximum - 30°C & Minimum - 18°C</p> 
+    </div>
+  </div>
+</div>
+
+
+ -->
+
+</body>
+</html>

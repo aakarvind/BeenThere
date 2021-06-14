@@ -1,0 +1,122 @@
+<body bgcolor="#afafaf">
+  <br><br>
+  <h1 align="center"> ADD REVIEW</h1>
+
+  <div class="wrapper">
+
+    <form method="post" action="" class="ccform" (ngSubmit)="reviewForm()" [formGroup]="userReviewForm">
+
+      <div class="form-group">
+        <div class="ccfield-prepend">
+          <span class="ccform-addon"><i class="fa fa-user fa-3x"></i></span>
+          <input class="ccformfield" type="text" placeholder="Full Name" id="name" formControlName="name" disabled
+            autocomplete="off">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="ccfield-prepend">
+          <span class="ccform-addon"><i class="fa fa-envelope fa-3x"></i></span>
+          <input class="ccformfield" type="text" placeholder="userEmail" id="userEmail" formControlName="userEmail"
+            disabled autocomplete="off">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="ccfield-prepend">
+          <span class="ccform-addon"><i class="fa fa-mobile-phone fa-3x"></i></span>
+          <input class="ccformfield" type="text" placeholder="Phone" id="phone" formControlName="phone" disabled
+            autocomplete="off">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="ccfield-prepend">
+          <span class="ccform-addon"><i class="fa fa-map-marker fa-3x"></i></span>
+          <nav>
+            <ul>
+              <select class="form-control" id="stateSel" [disabled]="selectDisabled" *ngIf="showOptions" formControlName="cityId"
+                (change)="getAllPlaceNamesInCity()">
+                <option disabled>--Select City--</option>
+                <option *ngFor="let cityName of cityNamesList" value="{{cityName.split(':')[1]}}">
+                  {{cityName.split(':')[2]}}</option>
+              </select>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="ccfield-prepend">
+          <span class="ccform-addon"><i class="fa fa-map fa-3x"></i></span>
+          <nav>
+            <ul>
+              <select class="form-control" id="stateCit" [disabled]="selectDisabled" *ngIf="showOptions" formControlName="placeId">
+                <option disabled>--Select Place--</option>
+                <option *ngFor="let placeName of placeNamesList" value="{{placeName.split(':')[1]}}">
+                  {{placeName.split(':')[2]}}
+                </option>
+              </select>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="ccfield-prepend">
+          <span class="ccform-addon"><i class="fa fa-lock   fa-3x"></i></span>
+          <nav>
+            <ul>
+              <select class="form-control" id="stateCit" formControlName="privacyPreference">
+                <option disabled>--Select Preference--</option>
+                <option value="PUBLIC">Public</option>
+                <option value="PRIVATE">Private</option>
+              </select>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class=" form-group">
+        <div class="ccfield-prepend">
+          <span class="ccform-addon"><i class="fa fa-smile-o fa-3x"></i></span>
+
+          <br>
+          <input formControlName="rating" type="radio" value="0" name="rating" id="zero" checked />
+          <input formControlName="rating" type="radio" value="1" name="rating" id="one" />
+          <label for="one"><i class="fa fa-star fa-2x"></i></label>
+          <input formControlName="rating" type="radio" value="2" name="rating" id="two" />
+          <label for="two"><i class="fa fa-star fa-2x"></i></label>
+          <input formControlName="rating" type="radio" value="3" name="rating" id="three" />
+          <label for="three"><i class="fa fa-star fa-2x"></i></label>
+          <input formControlName="rating" type="radio" value="4" name="rating" id="four" />
+          <label for="four"><i class="fa fa-star fa-2x"></i></label>
+          <input formControlName="rating" type="radio" value="5" name="rating" id="five" />
+          <label for="five"><i class="fa fa-star fa-2x"></i></label>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <div class="ccfield-prepend">
+          <span class="ccform-addon"><i class="fa fa-comments fa-3x"></i></span>
+          <textarea class="ccformfield" name="comments" rows="8" placeholder="REVIEW" id="review"
+            formControlName="review" autocomplete="off"></textarea>
+        </div>
+      </div>
+    </form>
+
+    <form class="ccform" [formGroup]="userReviewPicForm">
+      <div class="form-group">
+        <div class="ccfield-prepend " align="left">
+          <span class="ccform-addon"><i class="fa fa-picture-o fa-3x" aria-hidden="true"></i></span>
+          <input type="file" (change)="getBase64($event)" name="base64String" id="base64String" formControlName="base64String">
+        </div>
+      </div>
+    </form>
+
+    <div class="ccfield-prepend" align="center" (click)="reviewForm()">
+      <input class="ccbtn" type="submit" value="Submit">
+    </div>
+  </div>
+</body>

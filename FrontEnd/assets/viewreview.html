@@ -1,0 +1,443 @@
+ <!DOCTYPE html>
+<html>
+<!-- <body background="../assets/bi-.png" > -->
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  
+  .grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-gap: 50px;
+  align-items: stretch;
+  }
+  .mySlides {
+    display:none;
+  }
+  img {
+  float: right;
+}
+
+  div2 {
+  border: 5px solid gray;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+p3 {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+a2 {
+  text-decoration: none;
+  color: #008CBA;
+}
+  div1 {
+  background-color: lightgrey;
+  width: 900px;
+  border: 5px solid green;
+  padding: 15px;
+  margin: 50px;
+}
+ 
+.grid >.card {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: rgb(2, 2, 2);
+  font-size: 20px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+.outer-container div {
+  width: 100%;
+  padding: 2%;
+}
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style> 
+</head>
+
+    
+
+<main class="grid">
+
+
+
+<div class="card">
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="../assets/3.jpg" style="width:100%">
+        <img class="mySlides" src="../assets/4.jpg" style="width:100%">
+        <img class="mySlides" src="../assets/5.jpg" style="width:100%">
+        <img class="mySlides" src="../assets/6.jpg" style="width:100%"> 
+      
+       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+
+  
+  <h1>Siddharth Shah, Apr 04, 2019</h1>
+  <p class="title">5 stars for the location of this Place</p>
+  <p>Staff is good but room quality is bad and old. Washroom's are too small in all rooms.</p>
+  <div >
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button>Contact</button></p>
+    </div>
+   
+    <div class="card">
+        <div class="w3-content w3-display-container">
+        <img class="mySlides" src="../assets/9.jpg" style="width:100%">
+        <img class="mySlides" src="../assets/4.jpg" style="width:100%">
+        <img class="mySlides" src="../assets/5.jpg" style="width:100%">
+        <img class="mySlides" src="../assets/6.jpg" style="width:100%"> 
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <script>
+          var slideIndex2 = 1;
+          showDivs(slideIndex2);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex2 += n);
+          }
+          
+          function showDivs(n) {
+            var j;
+            var k = document.getElementsByClassName("mySlides");
+            if (n > k.length) {slideIndex2 = 1}
+            if (n < 1) {slideIndex2 = k.length}
+            for (j = 0; j < k.length; j++) {
+              k[j].style.display = "none";  
+            }
+            k[slideIndex-1].style.display = "block";  
+          }
+          </script>
+
+      <h1>Siddharth Shah, Apr 04, 2019</h1>
+      <p class="title">5 stars for the location of this Place</p>
+      <p>Staff is good but room quality is bad and old. Washroom's are too small in all rooms.</p>
+      <div >
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <p><button>Contact</button></p>
+        </div>
+     
+    </main>
+
+    <!-- <article> 
+
+        <div class="card">
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" src="../assets/9.jpg" style="width:100%">
+                <img class="mySlides" src="../assets/4.jpg" style="width:100%">
+                <img class="mySlides" src="../assets/5.jpg" style="width:100%">
+                <img class="mySlides" src="../assets/6.jpg" style="width:100%"> 
+           
+          <h1>Siddharth Shah, Apr 04, 2019</h1>
+          <p class="title">5 stars for the location of this Place</p>
+          <p>Staff is good but room quality is bad and old. Washroom's are too small in all rooms.</p>
+          <div >
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+          </div>
+          <p><button>Contact</button></p>
+            </div>
+            </div>
+            </div> 
+        </article> -->
+
+<!--     
+<article> 
+
+    <div class="card">
+        <img src="../assets/8.jpeg"alt="Mysore Palace" style="width:100%;">
+      
+      <h1>Siddharth Shah, Apr 04, 2019</h1>
+      <p class="title">5 stars for the location of this Place</p>
+      <p>Staff is good but room quality is bad and old. Washroom's are too small in all rooms.</p>
+      <div >
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <p><button>Contact</button></p>
+        </div>
+        </div>
+        </div> 
+    </article>
+    
+<article> 
+
+    <div class="card">
+        <img src="../assets/7.jpeg"alt="Mysore Palace" style="width:100%;">
+      
+      <h1>Siddharth Shah, Apr 04, 2019</h1>
+      <p class="title">5 stars for the location of this Place</p>
+      <p>Staff is good but room quality is bad and old. Washroom's are too small in all rooms.</p>
+      <div >
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <p><button>Contact</button></p>
+        </div>
+        </div>
+        </div> 
+    </article>
+        
+<article> 
+
+    <div class="card">
+        <img src="../assets/6.jpeg"alt="Mysore Palace" style="width:100%;">
+      
+      <h1>Siddharth Shah, Apr 04, 2019</h1>
+      <p class="title">5 stars for the location of this Place</p>
+      <p>Staff is good but room quality is bad and old. Washroom's are too small in all rooms.</p>
+      <div >
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <p><button>Contact</button></p>
+        </div>
+        </div>
+        </div> 
+    </article>
+
+            
+<article> 
+
+    <div class="card">
+        <img src="../assets/1.jpeg"alt="Mysore Palace" style="width:100%;">
+      <h1>Siddharth Shah, Apr 04, 2019</h1>
+      <p class="title">5 stars for the location of this Place</p>
+      <p>Staff is good but room quality is bad and old. Washroom's are too small in all rooms.</p>
+      <div >
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <p><button>Contact</button></p>
+        </div>
+        </div>
+        </div> 
+    </article> 
+                 -->
+
+            
+</body>
+</html>   
+
+
+
+<!-- <!doctype html>
+<title>Example</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  }
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.grid > article img {
+  max-width: 100%;
+}
+.text {
+  padding: 0 20px 20px;
+}
+.text > button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  }
+</style>
+<main class="grid">
+  <article>
+      <div class="w3-content w3-display-container">
+          <img class="mySlides" src="../assets/er.jpg" style="width:100%">
+          <img class="mySlides" src="../assets/a.jpg" style="width:100%">
+          <img class="mySlides" src="../assets/b.jpg" style="width:100%">
+          <img class="mySlides" src="../assets/b.jpg" style="width:100%"> 
+        
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+
+
+    <div class="text">
+      <h3>Seamlessly visualize quality</h3>
+      <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+      <div >
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+        </div>
+      
+        <p><button>Contact</button></p>
+    </div>
+  </article>
+  
+  
+  
+  <article>
+      <div class="w3-content w3-display-container">
+          <img class="mySlides" src="../assets/er.jpg" style="width:100%">
+          <img class="mySlides" src="../assets/a.jpg" style="width:100%">
+          <img class="mySlides" src="../assets/b.jpg" style="width:100%">
+          <img class="mySlides" src="../assets/b.jpg" style="width:100%"> 
+        
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+    <div class="text">
+      <h3>Completely Synergize</h3>
+      <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
+      <button>Here's how</button>
+    </div>
+  </article>
+  <article>
+    <img src="/pix/samples/22l.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Dynamically Procrastinate</h3>
+      <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+      <button>Read more</button>
+    </div>
+  </article>
+  <article>
+    <img src="/pix/samples/15l.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Best in class</h3>
+      <p>Imagine jumping into that boat, and just letting it sail wherever the wind takes you...</p>
+      <button>Just do it...</button>
+    </div>
+  </article>
+  <article>
+    <img src="/pix/samples/25m.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Dynamically innovate supply chains</h3>
+      <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
+      <button>Here's why</button>
+    </div>
+  </article>
+  <article>
+    <img src="/pix/samples/16l.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Sanity check</h3>
+      <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+      <button>Stop here</button>
+    </div>
+  </article>
+</main> -->

@@ -1,0 +1,39 @@
+<!--Feedback modal-->
+
+<div id="ex1" class="modal" >
+  <h2 class="header">Feedback</h2>
+  <div>
+    <form method="post"  [formGroup]="feedbackForm">
+      <div class="form-group">
+        <input type="text" name="userName" placeholder="userName" id="userName" formControlName="userName">
+      </div>
+      <div class="form-group">
+        <input type="text" name="userId" placeholder="userId" id="userId" formControlName="userId">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" rows="5" id="feedback" placeholder="Provide your suggestions here..."
+          formControlName="feedback"></textarea>
+          <!-- <span id="feedbackError" class="error-message" *ngIf="!feedbackForm.controls.feedback.valid && feedbackForm.controls.feedback.dirty"></span> -->
+      </div>
+      How satisfied are you with your experience on the site : 
+      <div class=" form-group">
+          <select class="form-control" id="stateCit" formControlName="satisfactionLevel">
+                <option disabled>--Higher the better :)--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+          </select>
+      </div>
+      <br>
+      <!-- <button type="submit" *ngIf="!feedbackForm.valid">
+          <a style="width: 100%; height: 100%;">Submit</a>
+      </button> -->
+      <button type="submit" [disabled]="feedbackForm.invalid" (click)="submitFeedback()">
+        <a rel="modal:close" >Submit</a>
+      </button>
+    </form>
+  </div>
+  <a href="#close-modal" rel="modal:close" class="close-modal closesym"></a>
+</div>

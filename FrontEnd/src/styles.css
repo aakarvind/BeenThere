@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body {
+
+
+  
+    /* The image used */
+    /* background-image: url("dd.jpg"); */
+  
+    /* Full height */
+    height: 100%; 
+    width: 100%;
+
+    /* background: #e4efe9; */
+    /* background-image:url(https://image.freepik.com/free-vector/dark-blue-blurred-background_1034-589.jpg) ; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .error-message{
+      color: red;
+      font-size: small;
+  }

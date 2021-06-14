@@ -1,0 +1,192 @@
+#userprofile{
+    background: linear-gradient(138deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/200%;
+    transition: 1s;
+    --c1: rgb(92, 140, 212);
+    --c2: rgb(108, 226, 235);
+    margin-top:30px;
+    padding: 16px;
+   
+  }
+  /* .profile-panel{
+    width:100%;
+    margin-top:30px;
+  } */
+  
+  .profile-panel .panel-heading {
+    padding: 10px 25px;
+    background: linear-gradient(138deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/200%;
+    transition: 1s;
+    --c1: rgb(39, 39, 39);
+    --c2: rgb(54, 128, 197);
+    border-radius: 0;
+    margin-top: 30px;
+  }
+  .profile-panel .panel-heading h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    padding-left: 20px;
+  }
+  .profile-panel .panel-body {
+    padding-left: 0;
+    padding-right: 0;
+    border:black;
+    border-radius: 1px;
+  }
+  .profile-panel .panel-body:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .profile-panel .panel-body h2 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 20px;
+    color: #404040;
+  }
+  .profile-panel .panel-body header {
+    margin-bottom: 25px;
+  }
+  .profile-panel .panel-body .figure-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .profile-panel .panel-body .figure-wrapper img {
+    width: 100%;
+  }
+  .profile-panel .panel-body .profile-details h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #404040;
+  }
+  .profile-panel .panel-body .profile-details li {
+    padding: 8px 0 8px 35px;
+    position: relative;
+    font-weight: normal;
+    color: #404040;
+    font-size: 15px;
+  }
+  .profile-panel .panel-body .profile-details li i {
+    font-size: 16px;
+    vertical-align: top;
+    line-height: 100%;
+    position: absolute;
+    left: 0;
+    width: 18px;
+    text-align: center;
+    top: 12px;
+  }
+  .profile-panel .panel-body .profile-block {
+    position: relative;
+  }
+  .profile-panel .panel-body .profile-block .profile-header h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    color: #404040;
+  }
+  .profile-panel .panel-body .profile-block .profile-edit {
+    position: relative;
+    z-index: 1;
+    display: none;
+  }
+  .profile-panel .panel-body .profile-block.toggled .profile-edit {
+    display: block;
+  }
+  .profile-panel .panel-body .profile-block.toggled .profile-view {
+    display: none;
+  }
+  .profile-panel .panel-body ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .profile-panel .panel-body ul.actions {
+    position: absolute;
+    /* top: -2px; */
+    right: 0;
+  }
+  .profile-panel .panel-body ul.actions i {
+    color: #404040;
+  }
+  .profile-panel .panel-body dt {
+    font-weight: normal;
+    color: #404040;
+  }
+  @media screen and (min-width: 1025px) {
+    .profile-panel .panel-body .dl-horizontal dt {
+      text-align: left;
+    }
+  }
+  
+  .btn {
+    background: #4bb515;
+    border-color: #4bb515;
+    border-radius: 3px;
+    padding: 10px 15px;
+    min-width: 90px;
+  }
+  .btn[disabled] {
+    background: #4bb515;
+    border-color: #4bb515;
+  }
+  .btn[disabled]:hover, .btn[disabled]:active, .btn[disabled]:focus {
+    background: #4bb515;
+    border-color: #4bb515;
+  }
+  .btn:hover, .btn:active, .btn:focus {
+    background: #164b06;
+    border-color: #164b06;
+  }
+  .btn.btn-outline {
+    background: transparent;
+    border-color: #4bb515;
+    color: #4bb515;
+  }
+  .btn.btn-outline:hover, .btn.btn-outline:active, .btn.btn-outline:focus {
+    background: #4bb515;
+    color: #fff;
+  }
+  
+  .p-10 {
+    padding-top: 10px;
+  }
+  
+  .btn-link {
+    color: #888888;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 6px 12px;
+    outline: 0;
+  }
+  .btn-link:hover {
+    color: #888888;
+    text-decoration: none;
+  }
+
+  .profile-image {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+  }
+  .profile-image img {
+    max-width: 100%;
+  }
+  .profile-image .profile-status {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border: 5px solid #fafaff;
+    border-radius: 100%;
+  }
+  .profile-image .profile-status.profile-status-away {
+    background: #fad920;
+  }
+  .profile-image img {
+    border-radius: 100%;
+  }
+  

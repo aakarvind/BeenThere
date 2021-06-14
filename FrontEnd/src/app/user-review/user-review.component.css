@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+body {
+  /* background-color: #f29107; */
+  background: linear-gradient(138deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/200%;
+  transition: 1s;
+  --c1: rgb(238, 72, 43);
+  --c2:#f3a73c;
+	color: rgb(0, 0, 0);
+	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Lato', Arial, sans-serif;
+	margin:0;
+	padding:0;
+	padding-bottom:60px;
+}
+h1{
+    text-align: center;
+    font-family: Indie Flower;
+    font-size: 4em;
+    color: #000000;
+}
+.wrapper{
+  padding-left: 15%;
+}
+.ccheader {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
+.ccheader h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.5em;
+	line-height: 1.3;
+}
+.ccheader {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
+.ccheader h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.5em;
+	line-height: 1.3;
+}
+
+/* Form CSS*/
+.ccform {
+   margin: 0 auto;
+    width: 70%;
+}
+.ccfield-prepend{
+	margin-bottom:10px;
+	width:100%;
+}
+
+
+
+.ccformfield {
+	color:#000000; 
+	background:#FFFFFF;
+	border:none;
+	padding:15.5px;
+	width:70%;
+	display:block;
+	font-family: 'Lato',Arial,sans-serif;
+  font-size:14px;
+  margin-bottom: 20px;
+}
+#stateSel{
+  height: 60px;
+  width:70%;
+  margin-bottom: 20px;
+  border:none;
+  position: relative;
+  display:block;
+  padding:15.5px;
+}
+#stateCit{
+  height: 60px;
+  width:70%; 
+  margin-bottom: 20px;
+  border:none;
+  position: relative;
+  display:block;
+  padding:15.5px;
+
+}
+
+.ccformfield {
+	font-family: 'Lato',Arial,sans-serif;
+}
+.ccbtn{
+	display:block;
+	border:none;
+	background:#f8ae45;
+	color:rgb(0, 0, 0);
+	padding:12px 25px;
+	cursor:pointer;
+	text-decoration:none;
+  font-weight:bold;
+  border:solid 1px;
+  border-radius: 8px;
+}
+.ccbtn:hover{
+	background:#383737;
+
+}
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;   
+  cursor: inherit;
+  display: block;
+}
+.credit {
+  color:rgb(0, 0, 0);
+  width: 800px;
+  clear:both;
+margin:0 auto;
+  line-height:25px;
+ padding: 25px 50px; 
+}
+.credit em{
+margin-right:5px;
+}
+.credit a {
+color: #0d2ed5;
+font-weight: bold;
+text-decoration: none;
+}
+
+
+
+
+
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+#container {
+  margin: 0 auto;
+  width:70%;
+}
+
+p {
+	text-align: center;
+}
+
+
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #E64A19;
+	}
+
+nav a {
+	display:block;
+	padding:0 100px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+
+  /*sprite with stars*/
+
+  .ratingDiv {
+
+    background: rgb(255, 255, 255);
+   
+   }
+   
+   
+   
+   input[type="radio"] {
+   
+    position: fixed;
+   
+    top: 0;
+   
+    right: 100%;
+   
+   }
+   
+   
+   
+   .ratingDiv label {
+    padding: 1px;
+   
+    margin: 0;
+   
+    float: left;
+   
+    cursor: pointer;
+   
+    transition: 0.2s;
+   
+   }
+   
+   
+   
+   input[type="radio"]:checked ~ input + label {
+   
+    background: none;
+   
+    color: rgb(255, 255, 255);
+   
+   }
+   
+   
+   
+   input + label {
+   
+    /* background: #fff; */
+   
+    color: orange;
+   
+    margin: 0 0 1em 0;
+   
+   }
